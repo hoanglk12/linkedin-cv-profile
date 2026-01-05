@@ -76,7 +76,7 @@ export default function Introduction() {
           {[
             'JavaScript', 'TypeScript', 'Java', 'GraphQL', 'REST APIs', 'Node.js', 
             'SQL Server', 'MySQL', 'CMS', 'Github', 'Postman', 'Jira',
-            'Azure Devops', 'Insurance', 'eCommerce','CI/CD', 'Scrum/Agie'
+            'Azure Devops', 'Insurance', 'eCommerce','CI/CD', 'Scrum/Agile'
           ].map((skill) => (
             <span
               key={skill}
