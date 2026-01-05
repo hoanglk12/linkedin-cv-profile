@@ -1,0 +1,19 @@
+PLACEHOLDER FOR PROFILE PHOTO
+
+To add your profile photo:
+1. Choose a professional headshot (square ratio recommended)
+2. Optimize for web (recommended: 500x500px, under 200KB)
+3. Save as "profile-photo.jpg"
+4. Place in this /public directory
+
+Supported formats:
+- JPG/JPEG (recommended)
+- PNG
+- WebP (best compression)
+
+Photo tips:
+- Use good lighting
+- Professional attire
+- Neutral background
+- Smile naturally
+- High resolution (at least 500x500px)

@@ -1,0 +1,16 @@
+PLACEHOLDER PDF FILE
+
+This is a placeholder for your CV PDF file.
+
+To add your actual CV:
+1. Export your CV as a PDF file
+2. Name it "cv.pdf"
+3. Replace this file in the /public directory
+
+The download button in the web application will automatically serve this file.
+
+Tips for your CV PDF:
+- Keep file size under 2MB for faster downloads
+- Ensure it's readable and professional
+- Include your contact information
+- Update regularly with new experience and skills
