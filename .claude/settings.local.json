@@ -1,0 +1,25 @@
+{
+  "enabledMcpjsonServers": [
+    "lightrag",
+    "playwright",
+    "github",
+    "graphql-mcp",
+    "docker-mcp-server",
+    "jupyter-mcp-server",
+    "bitbucket-mcp",
+    "chrome-devtools-mcp",
+    "postman",
+    "grafana-k6",
+    "atlassian",
+    "apify",
+    "accessibility-scanner",
+    "firefox-devtools",
+    "firefox",
+    "zapier",
+    "gmail",
+    "vercel",
+    "context7",
+    "figma",
+    "codebase-memory-mcp"
+  ]
+}
