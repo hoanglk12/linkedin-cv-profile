@@ -67,7 +67,7 @@ const projects = [
 export default function Projects() {
   return (
     <motion.ol
-      className="space-y-12"
+      className="group/list space-y-12"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
@@ -77,12 +77,13 @@ export default function Projects() {
         <motion.li
           key={project.name}
           variants={itemVariants}
-          className="grid grid-cols-1 gap-1 sm:grid-cols-[10rem_1fr] sm:gap-4"
+          className="group relative grid grid-cols-1 gap-1 transition-opacity duration-300 sm:grid-cols-[10rem_1fr] sm:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
         >
-          <header className="mt-1 text-sm font-semibold uppercase tracking-wide text-slate-500">
+          <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-colors duration-300 motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
+          <header className="relative z-10 mt-1 text-sm font-semibold uppercase tracking-wide text-slate-500">
             {project.period}
           </header>
-          <div>
+          <div className="relative z-10">
             <h3 className="font-medium leading-snug text-slate-200">{project.name}</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-400">{project.description}</p>
             <ul className="mt-2 list-disc space-y-2 pl-4 text-sm leading-relaxed text-slate-400">

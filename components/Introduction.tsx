@@ -23,25 +23,24 @@ const skills = [
   'Azure Devops', 'Insurance', 'eCommerce', 'CI/CD', 'Scrum/Agile',
 ];
 
+const paragraphs = [
+  "I'm a Sr Quality Assurance Engineer with a passion for testing. With over 7 years of experience in the testing industry, I've had the privilege of working with various companies, building products that make a real difference in people's lives.",
+  "My focus is on understanding product risk, designing effective test coverage, and creating automation where it brings real value. I collaborate closely with developers and stakeholders to turn requirements into testable acceptance criteria, reduce escaped defects, and improve release confidence.",
+  "Beyond testing, I'm an active contributor to open-source projects and enjoy sharing knowledge through technical blog posts. I believe in continuous learning and staying current with the latest technologies and best practices in software testing.",
+];
+
 export default function Introduction() {
   return (
-    <div className="max-w-md space-y-4 leading-relaxed text-slate-400">
-      <p>
-        I&apos;m a Sr Quality Assurance Engineer with a passion for testing. With over 7 years of
-        experience in the testing industry, I&apos;ve had the privilege of working with various
-        companies, building products that make a real difference in people&apos;s lives.
-      </p>
-      <p>
-        My focus is on understanding product risk, designing effective test coverage, and creating
-        automation where it brings real value. I collaborate closely with developers and
-        stakeholders to turn requirements into testable acceptance criteria, reduce escaped
-        defects, and improve release confidence.
-      </p>
-      <p>
-        Beyond testing, I&apos;m an active contributor to open-source projects and enjoy sharing
-        knowledge through technical blog posts. I believe in continuous learning and staying
-        current with the latest technologies and best practices in software testing.
-      </p>
+    <div className="group/list max-w-md space-y-4 leading-relaxed text-slate-400">
+      {paragraphs.map((paragraph, i) => (
+        <div
+          key={i}
+          className="group relative -mx-4 rounded-md px-4 py-2 transition-opacity duration-300 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+        >
+          <div className="absolute inset-0 z-0 hidden rounded-md transition-colors duration-300 motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
+          <p className="relative z-10">{paragraph}</p>
+        </div>
+      ))}
 
       <motion.div
         className="flex flex-wrap gap-2 pt-2"

@@ -120,7 +120,7 @@ export default function Sidebar() {
         </nav>
       </div>
 
-      <div className="flex items-center gap-5">
+      <div className="mt-8 flex items-center gap-5 lg:mt-0">
         {SOCIAL_LINKS.map(({ href, label, icon: Icon }) => (
           <a
             key={label}
